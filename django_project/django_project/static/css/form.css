@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('/static/imagenes/fondo3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center;
+
+}
+
+/*modificacion de la clase wrapper*/
+.wrapper{
+    width: 680px;
+    height: 600px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
+    color: #fff;
+    border-radius: 10px;
+    padding: 30px 40px;
+}
+
+/*Modificacion del h2 de la clase wrapper*/
+.wrapper h2{
+    font-size: 25px;
+    text-align: center;
+}
+
+
+/*Modificacion del icono de google */
+#l1{
+    position: relative;
+    width: 100%;
+    left: 120px;
+    font-size: 3rem;
+    top: 53px;
+}
+
+/*Modificacion del icono de facebook */
+#l2{
+    position: relative;
+    width: 100%;
+    left: 250px;
+    top: -3px;
+    font-size: 3rem;
+}
+
+/*Modificacion del icono de gmail*/
+#l3{
+    position: relative;
+    width: 100%;
+    left: 400px;
+    top: -60px;
+    font-size: 3rem;
+}
+
+/*Modificacion del parrafo: Tambien puede registrarse con */
+#parr1{
+    text-align: center;
+    position: relative;
+    top: 30px;
+}
+
+/*Modificacion del boton limpiar */
+#boton1{
+    font-size: 17px;
+    position: relative;
+    top: 20px;
+    left: 150px;
+}
+
+/*Modificacion del boton registrar */
+#boton2{
+    font-size: 17px;
+    position: relative;
+    top: 20px;
+    left: 150px;
+}
+
+/*Modificacion del boton login */
+#boton3{
+    font-size: 17px;
+    position: relative;
+    top: 20px;
+    left: 150px;
+}

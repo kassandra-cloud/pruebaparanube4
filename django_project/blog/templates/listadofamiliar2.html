@@ -1,0 +1,29 @@
+{% extends "basefamiliar.html" %}
+{% block content %}
+{% load static %}
+<link rel="stylesheet"  href='{% static "css/historial.css" %}'/>
+
+    <div class="container">
+        <h1>Historial medico Guardado</h1>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Diagnostico</th>
+                    <th>Alergias</th>
+                    <th>Afecciones</th>
+                    <th>Medicamento</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for historial in historial %}
+                    <tr>
+                        <td>{{ historial.diagnostico }}</td>
+                        <td>{{ historial.alergias }}</td>
+                        <td>{{ historial.afecciones }}</td>
+                        <td>{{ historial.medicamento}}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+{% endblock %} 

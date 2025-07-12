@@ -1,0 +1,30 @@
+{% extends "basefamiliar.html" %}
+{% block content %}
+{% load static %}
+<link rel="stylesheet"  href='{% static "css/historial.css" %}'/>
+    <div class="container">
+        <h1>Planificaciones Guardadas</h1>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Destino</th>
+                    <th>Tiempo de Viaje</th>
+                    <th>Ruta</th>
+                    <th>Descripción</th>
+                    <th>Usuario</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for planificacion in planificaciones %}
+                    <tr>
+                        <td>{{ planificacion.destino }}</td>
+                        <td>{{ planificacion.tiempodeviaje }}</td>
+                        <td>{{ planificacion.ruta }}</td>
+                        <td>{{ planificacion.descripcion }}</td>
+                        <td>{{ planificacion.usuario.username }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+{% endblock %}

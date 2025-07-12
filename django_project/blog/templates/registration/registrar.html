@@ -1,0 +1,42 @@
+{% block content %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  href='{% static "css/form.css" %}'/>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="wrapper">
+        <h2>Registro de usuario</h2>
+        <form action="" method="POSt">
+            {% csrf_token %}
+            <table>
+                {{ form.as_table }}
+            </table>
+            <input type="reset" value="limpiar" id="boton1">
+            <input type="submit" value="registrar" id="boton2">
+            <button id="boton3"><a href="{% url 'login' %}">Iniciar sesión</a></button>
+        </form>
+
+        <p id="parr1">Tambien puede registrarse con: </p>
+
+        <div class="logo1" id="l1">
+            <i class='bx bxl-google-plus-circle'></i>
+        </div>
+
+        <div class="logo2" id="l2">
+            <i class='bx bxl-facebook-square'></i>
+        </div>
+
+        <div class="logo3" id="l3">
+            <i class='bx bxl-gmail'></i>
+        </div>
+    </div>
+</body>
+</html>
+{% endblock content %}

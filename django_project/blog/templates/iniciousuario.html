@@ -1,0 +1,44 @@
+{% extends "baseusuario.html" %}
+{% load static %}
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Django Project</title>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+        <link rel="stylesheet"  href='{% static "css/navegacion.css" %}'/>
+		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    	<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		
+	</head>
+	<body > 
+        {% block content %}
+		
+
+        <h1 id="parra1">Navegación segura para personas con discapacidad visual</h1>
+        <div class="card" style="width: 40rem; height: 20rem; align-items: center;" id="card1">
+            <div class="card-body">
+              <p class="card-text-center">Estamos desarrollando un dispositivo especialmente diseñado para ayudarle en sus desplazamientos hacia lugares específicos. Este dispositivo utiliza la tecnología GPS para proporcionarle indicaciones precisas sobre la ruta que debes seguir. Además, se complementa con unos auriculares que le guiarán detalladamente y le alertarán sobre posibles riesgos en el camino, lo que le permitirá desplazarte de manera más segura y autónoma.
+
+                Además de estas funciones principales, el dispositivo también se conecta a una aplicación web que tus familiares o cuidadores pueden usar para supervisar en tiempo real el progreso durante el viaje. Esta aplicación almacena información sobre los lugares que visita con frecuencia y evalúa posibles riesgos en la ruta. Con estos datos, el sistema selecciona automáticamente la ruta más segura para ti, lo que optimiza tu seguridad y autonomía en sus desplazamientos.</p>
+            </div>
+        </div>
+		<a href="{% url 'navegacion' %}" id="navegacion-link2"></a>
+        <a href="{% url 'navegacion2' %}" id="navegacion-link"></a>
+
+
+
+
+		
+
+
+	<script src="{% static 'js/mapa.js' %}"></script>
+	<script src="{% static 'js/prueba.js' %}"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+	
+
+    </body>
+</html>
+{% endblock content %}

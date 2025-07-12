@@ -1,0 +1,48 @@
+body {
+    background-image: url('/static/imagenes/fondo2.jpg');
+    background-size: 100% 100%; /* Establece el tamaño de la imagen de fondo (ancho 100%, alto 30%) */
+    background-repeat: no-repeat;
+    background-position: center top; 
+    min-height: 100vh;
+}
+
+
+#nav{
+  text-decoration: none; 
+  position: relative;
+  transition: border-bottom 0.3s ease; 
+}
+  
+#parra1{
+  text-align: center;
+  color: white;
+}
+
+#card1{
+  position: relative;
+  left: 450px;
+  top: 30px;
+}
+
+#card2{
+  position: relative;
+  left: 290px;
+  top: 30px;
+}
+
+#but1{
+  position: relative;
+  left: 1100px;
+  color:black;
+  box-shadow: 0 0 10px rgba(0,0,0, .1);
+  background: blue;
+  border: none;
+  outline: none;
+  width: 10rem;
+}
+
+#b2{
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}

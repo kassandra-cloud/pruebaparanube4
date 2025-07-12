@@ -1,0 +1,59 @@
+body {
+    background-image: url('/static/imagenes/fondo3.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center top; 
+    min-height: 100vh;
+}
+
+#b1{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+h1{
+    color: #fff;
+    text-align: center;
+}
+
+#card{
+    position: relative;
+    left: 160px;
+    top: -30px;
+}
+
+
+#but1{
+    position: relative;
+    top: 400px;
+    left: 40rem;
+    width: 25rem;
+}
+
+#but2{
+    position: relative;
+    top: 400px;
+    left: -55px;
+    width: 15rem;
+}
+
+#but3{
+    position: relative;
+    top: 450px;
+    left: -9px;
+    width: 25rem;
+}
+
+#but4{
+    position: relative;
+    top: 452px;
+    width: 15rem;
+    left: -700px;
+}
+
+#map{
+    position: relative;
+    top: 20px;
+    left: 290px;
+}

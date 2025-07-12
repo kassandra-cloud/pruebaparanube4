@@ -1,0 +1,50 @@
+{% block content %}
+{% load static %}
+
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"  href='{% static "css/form.css" %}'/>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  </head>
+  <body>
+        <div class="wrapper">
+          <form action="">
+            <h1>Registro de usuario</h1>
+            <div class="input-box">
+              <input type="text" placeholder="nombre completo" required>
+              <i class='bx bxs-user-rectangle' ></i>
+            </div>
+            <div class="input-box">
+              <input type="text" placeholder="correo electronico" required>
+              <i class='bx bxs-envelope'></i>
+            </div>
+
+            <div class="input-box">
+              <input type="password" placeholder="contraseña" required>
+              <i class='bx bxs-lock-alt'></i>
+            </div>
+            <button class="btn1" type="submit" ><a href="{% url 'inicio' %}">Registrarse</a></button> 
+          </form>
+
+          <p id="parr1">Tambien puede registrarse con: </p>
+
+          <div class="logo1" id="l1">
+            <i class='bx bxl-google-plus-circle'></i>
+          </div>
+
+          <div class="logo2" id="l2">
+            <i class='bx bxl-facebook-square'></i>
+          </div>
+
+          <div class="logo3" id="l3">
+            <i class='bx bxl-gmail'></i>
+          </div>
+
+        </div>
+    
+  </body>
+  </html>
+  {% endblock content %}

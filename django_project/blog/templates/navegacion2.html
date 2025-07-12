@@ -1,0 +1,45 @@
+{% extends "baseusuario.html" %}
+{% block content %}
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Django Project</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link rel="stylesheet"  href='{% static "css/navegacion2.css" %}'/>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <!-- Incluir la API de Google Maps y Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+
+    <title>Mapa de Última Ubicación</title>
+   
+ 
+</head>
+<body> 
+  <h1>Navegación iniciada</h1>
+
+  <button class="btn btn-primary" type="submit" id="but1"><a href="" id="b1">Reanudar</a></button>
+  <button class="btn btn-primary" type="submit" id="but2"><a href="" id="b1">Pausar</a></button>
+  <button class="btn btn-primary" type="submit" id="but3"><a href="" id="b1">Ver informacion</a></button>
+  <button class="btn btn-primary" type="submit" id="but4"><a href="" id="b1">Terminar</a></button>		
+  <div id="map"></div>
+  <a href="{% url 'iniciousuario' %}" id="navegacion-link3"></a>
+	<a href="{% url 'navegacion' %}" id="navegacion-link4"></a>
+	
+
+  <!-- Tu contenido HTML aquí -->
+  <!-- Incluir la API de Google Maps -->
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDZUHeFEU10528EZghLUdw2kIj8yIN1W_Y&callback=initMap"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  <!-- Incluir tus scripts personalizados aquí -->
+  <script src="{% static 'js/prueba.js' %}"></script>
+  <script src="{% static 'js/app.js' %}"></script>
+  <script src="{% static 'js/config.js' %}"></script>
+</body>
+</html>
+{% endblock content %}

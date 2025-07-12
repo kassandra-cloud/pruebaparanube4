@@ -1,0 +1,45 @@
+{% block content %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  href='{% static "css/login.css" %}'/>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Login</title>
+</head>
+<body>
+
+    <div class="wrapper">
+      <h2>Autenticacion</h2>
+        <form action="" method="POST">
+          {% csrf_token %}
+          <table>
+            {{form.as_table}}
+          </table>
+          <input type="submit" value="Login" id="boton1">
+          <button id="boton2"><a href="{% url 'registro_usuario' %}">Registro</a></button>
+
+        </form>
+        <a id="admin" href="{% url 'admin:index' %}">iniciar como Admin</a>
+
+        <p id="parr1">Iniciar sesión con:</p>
+
+        <div class="logo1" id="l1">
+          <i class='bx bxl-google-plus-circle'></i>
+        </div>
+
+        <div class="logo2" id="l2">
+          <i class='bx bxl-facebook-square'></i>
+        </div>
+
+        <div class="logo3" id="l3">
+          <i class='bx bxl-gmail'></i>
+        </div>
+
+    </div>
+    
+</body>
+</html>
+{% endblock content %}

@@ -1,0 +1,62 @@
+body {
+    background-image: url('/static/imagenes/fondo2.jpg');
+    background-size: 100% 100%; /* Establece el tamaño de la imagen de fondo (ancho 100%, alto 30%) */
+    background-repeat: no-repeat;
+    background-position: center top; 
+    min-height: 100vh;
+}
+
+h1{
+    color: white;
+    text-align: center;
+}
+
+#form{
+    position: relative;
+    color: white;
+    width: 800px;
+    height:450px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
+    color: #fff;
+    border-radius: 10px;
+    padding: 30px 40px;
+    text-align: left;
+    left: 250px;
+    top: 30px;
+}
+
+.container{
+    color: white;
+}
+#id_diagnostico{
+    position: relative;
+    height: 30px;
+    width: 600px;
+    left: 30px;
+}
+#id_alergias{
+    position: relative;
+    height: 30px;
+    width: 600px;
+    left: 60px;
+}
+#id_afecciones{
+ 
+        position: relative;
+        height: 30px;
+        width: 600px;
+        left: 40px;
+
+}
+#id_medicamento{
+    position: relative;
+    height: 30px;
+    width: 600px;
+    left: 20px;
+}
+#inicio{
+    text-decoration: none;
+    color: #fff;
+}

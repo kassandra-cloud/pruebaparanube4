@@ -1,0 +1,16 @@
+body {
+    background-image: url('/static/imagenes/fondo3.jpg');
+    background-size: 100% 100%; 
+    background-repeat: no-repeat;
+    background-position: center top; 
+    min-height: 100vh;
+}
+
+
+#map{
+    position: relative;
+    height: 400px;
+    width: 90%;
+    top:60px;
+    left: 40px;
+}
