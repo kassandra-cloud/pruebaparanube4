@@ -1,4 +1,5 @@
 from django.urls import path
+from blog import views
 from .views import InicioPageView, RegistroPageView, Inicio2PageView, NavegacionPageView, Navegacion2PageView,registro_usuario,InicioUsuarioPageView, HistorialPageView, ListadoPageView, planificacionPageView, Listado2PageView
 from .views import login_view,InicioAdminPageView,agregar_usuario,ModificarDatosPageView,ListadofamiliarPageView,Listadofamiliar2PageView,NavegacionFamiliarPageView
 from blog.views import lista_usuarios,eliminar_usuario,confirmar_eliminacion,modificar_usuario
